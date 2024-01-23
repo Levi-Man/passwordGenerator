@@ -39,5 +39,5 @@ For any questions or suggestions, please reach me at github.com/Levi-Man or at i
 ## Screenshot
 <img src="./Assets/Screenshot 2024-01-23 155241.png" alt="Screenshot of application">
 
-Deployed application: 
+Deployed application: https://levi-man.github.io/passwordGenerator/ 
 GitHub Repository: https://github.com/Levi-Man/passwordGenerator
