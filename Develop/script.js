@@ -41,7 +41,7 @@ function generatePassword() {
   var password = "";
   for (var i  = 0; i < length; i++) {
 var randomNumber = Math.floor(Math.random() * allAvailable.length);
-password += allAvailable.charAt(randomNumber);
+password += allAvailable[randomNumber];
 
   }
   return password;
