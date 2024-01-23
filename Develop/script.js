@@ -27,7 +27,24 @@ function generatePassword() {
     return "";
   }
 
-  
+  var lowerCaseCharacters = "abcdefghijklmnopqrstuvwxyz";
+  var upperCaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var numericCharacters = "0123456789";
+  var specialCharacters = "!@#$%^&*()-_=+[]{}|;:'\",.<>/?`~"
+
+  var allAvailable = "";
+  if (includeLowerCase) allAvailable += lowerCaseCharacters;
+  if (includeUpperCase) allAvailable += upperCaseCharacters;
+  if (includeNumeric) allAvailable += numericCharacters;
+  if (includeSpecial) allAvailable += specialCharacters;
+
+  var password = "";
+  for (var i  = 0; i < length; i++) {
+var randomNumber = Math.floor(Math.random() * allAvailable.length);
+password += allAvailable.charAt(randomNumber);
+
+  }
+  return password;
 }
 
 // Add event listener to generate button
